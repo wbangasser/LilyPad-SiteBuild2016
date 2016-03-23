@@ -1,0 +1,426 @@
+﻿@{
+
+    Layout = "~/_SiteLayout.cshtml";
+
+
+}
+
+@*  This is the Photo Gallery.  I will point out below what to change if you wan to change these images  *@
+
+
+<div class="panel panel-success">
+    
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  gallery-col-padding">
+            <hgroup class="title">
+                <h2 class="page-headers">Visualizations.</h2>
+            </hgroup>
+        </div>
+    </div class="row">
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">@*gallery-col-padding*@
+            <div class="panel-body">
+                <div id="example2" class="slider-pro">
+                    <div class="sp-slides">
+
+                        @*  START OF IMAGE SLIDES:  *@
+
+                        <div class="sp-slide">
+                            <a href="~/Images/New/Lily001-BlueLily.png">
+                                <img class="sp-image" src="~/Images/New/Lily001-BlueLily.png" alt="Lily 01" />
+                            </a>
+
+
+                        </div>
+
+                        <div class="sp-slide">
+                            <a href="~/Images/New/Lily002-Enlight1 (4).jpg">
+                                <img class="sp-image" src="~/Images/New/Lily002-Enlight1 (4).jpg" alt="Lily 02" />
+                            </a>
+                        </div>
+
+                        <div class="sp-slide">
+                            <a href="~/Images/New/Lily003-Enlight1 (9).jpg">
+                                <img class="sp-image" src="~/Images/New/Lily003-Enlight1 (9).jpg" alt="Lily 03" />
+                            </a>
+                        </div>
+
+                        <div class="sp-slide">
+                            <a href="~/Images/New/Lily004.JPG">
+                                <img class="sp-image" src="~/Images/New/Lily004.JPG" alt="Lily 04" />
+                            </a>
+                        </div>
+
+                        <div class="sp-slide">
+                            <a href="~/Images/New/Lily005.JPG">
+                                <img class="sp-image" src="~/Images/New/Lily005.JPG" alt="Lily 05" />
+                            </a>
+                        </div>
+
+                        <div class="sp-slide">
+                            <a href="~/Images/New/Lily006.JPG">
+                                <img class="sp-image" src="~/Images/New/Lily006.JPG" alt="Lily 06" />
+                            </a>
+                        </div>
+
+                        <div class="sp-slide">
+                            <a href="~/Images/New/Lily007.JPG">
+                                <img class="sp-image" src="~/Images/New/Lily007.JPG" alt="Lily 07" />
+                            </a>
+                        </div>
+
+                        <div class="sp-slide">
+                            <a href="~/Images/New/Lily008.JPG">
+                                <img class="sp-image" src="~/Images/New/Lily008.JPG" alt="Lily 08" />
+                            </a>
+                        </div>
+
+                        <div class="sp-slide">
+                            <a href="~/Images/New/Lily009.jpg">
+                                <img class="sp-image" src="~/Images/New/Lily009.jpg" alt="Lily 09" />
+                            </a>
+                        </div>
+                    </div>
+
+                    @*  START OF THUMBNAILS  *@
+                    @*<div class="sp-thumbnails">
+                        <img class="sp-thumbnail" src="~/Images/LilyGraceResizeThumb001.jpg" />
+                        <img class="sp-thumbnail" src="~/Images/LilyGraceResizeThumb002.jpg" />
+                        <img class="sp-thumbnail" src="~/Images/LilyGraceResizeThumb003.jpg" />
+                        <img class="sp-thumbnail" src="~/Images/LilyGraceResizeThumb004.jpg" />
+                        <img class="sp-thumbnail" src="~/Images/LilyGraceResizeThumb005.jpg" />
+                        <img class="sp-thumbnail" src="~/Images/LilyGraceResizeThumb006.jpg" />
+                        <img class="sp-thumbnail" src="~/Images/LilyGraceResizeThumb007.jpg" />
+                        <img class="sp-thumbnail" src="~/Images/LilyGraceResizeThumb008.jpg" />
+                        <img class="sp-thumbnail" src="~/Images/LilyGraceResizeThumb009.jpg" />
+                        <img class="sp-thumbnail" src="~/Images/LilyGraceResizeThumb010.jpg" />
+                    </div>*@
+
+                </div>
+            </div>
+        </div>
+    </div class="row">
+</div>
+
+<!--
+
+<div class="panel panel-success">
+
+    <h4 class="panel-heading">GALLERY OF ASS + TITTIES</h4>
+
+    <div class="panel-body">
+        <div class="nim-slick">
+            <div class="slider slider-for slick-initialized slick-slider" >
+                
+                <div class="slick-slide slick-active" data-slick-index="0" aria-hidden="false"><img class="sp-image" src="~/Images/lily/Lily001.jpg" alt="Lily 01" /></div>
+                
+                <div class="slick-slide" data-slick-index="1" aria-hidden="true"><img class="sp-image" src="~/Images/lily/Lily003.jpg" alt="Lily 03" /></div>
+                <div class="slick-slide" data-slick-index="2" aria-hidden="true"><img class="sp-image" src="~/Images/lily/Lily004.jpg" alt="Lily 04" /></div>
+                <div class="slick-slide" data-slick-index="3" aria-hidden="true"><img class="sp-image" src="~/Images/lily/Lily005.jpg" alt="Lily 05" /></div>
+                <div class="slick-slide" data-slick-index="4" aria-hidden="true"><img class="sp-image" src="~/Images/lily/Lily006.jpg" alt="Lily 06" /></div>
+            </div>
+
+            <div class="slider slider-nav slick-initialized slick-slider">
+
+                <div aria-live="polite" class="slick-list draggable" tabindex="0" style="padding: 0px 50px;">
+    
+                    <div class="slick-track"  style="opacity: 1; width: 2002px; transform: translate3d(-462px, 0px, 0px);">
+
+                        <div class="slick-slide" data-slick-index="0" style="width: 154px;">
+                            <img src="~/Images/thumbnails/LilyThumb001.jpg" />
+                        </div>
+
+                        <div class="slick-slide" data-slick-index="-2" aria-hidden="true" style="width: 154px;">
+                            <img src="~/Images/thumbnails/LilyThumb003.jpg" />
+                        </div>
+
+                        <div class="slick-slide" data-slick-index="-1" aria-hidden="true" style="width: 154px;">
+                            <img src="~/Images/thumbnails/LilyThumb004.jpg" />
+                        </div>
+
+                        <div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 154px;">
+                            <img src="~/Images/thumbnails/LilyThumb005.jpg" />
+                        </div>
+
+                        <div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 154px;">
+                            <img src="~/Images/thumbnails/LilyThumb006.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="sp-slides">
+
+                @*  START OF IMAGE SLIDES:  *@
+
+                <div class="sp-slide">
+                    @*<a href="~/Images/lily/Lily001.jpg"></a>*@
+                    <img class="sp-image" src="~/Images/lily/Lily001.jpg" alt="Lily 01" />
+
+                </div>
+
+                <div class="sp-slide">
+                    @*<a href="~/Images/lily/Lily003.jpg"></a>*@
+                    <img class="sp-image" src="~/Images/lily/Lily003.jpg" alt="Lily 03" />
+
+                </div>
+
+                <div class="sp-slide">
+                    @*<a href="~/Images/lily/Lily004.jpg"></a>*@
+                    <img class="sp-image" src="~/Images/lily/Lily004.jpg" alt="Lily 04" />
+
+                </div>
+
+                <div class="sp-slide">
+                    @*<a href="~/Images/lily/Lily005.jpg"></a>*@
+                    <img class="sp-image" src="~/Images/lily/Lily005.jpg" alt="Lily 05" />
+
+                </div>
+
+                <div class="sp-slide">
+                    @*<a href="~/Images/lily/Lily006.jpg"></a>*@
+                    <img class="sp-image" src="~/Images/lily/Lily006.jpg" alt="Lily 06" />
+
+                </div>
+
+                <div class="sp-slide">
+                    @*<a href="~/Images/lily/Lily007.jpg"></a>*@
+                    <img class="sp-image" src="~/Images/lily/Lily007.jpg" alt="Lily 07" />
+
+                </div>
+
+                <div class="sp-slide">
+                    @*<a href="~/Images/lily/Lily008.jpg"></a>*@
+                    <img class="sp-image" src="~/Images/lily/Lily008.jpg" alt="Lily 08" />
+
+                </div>
+
+                <div class="sp-slide">
+                    @*<a href="~/Images/lily/Lily009.jpg"></a>*@
+                    <img class="sp-image" src="~/Images/lily/Lily009.jpg" alt="Lily 09" />
+
+                </div>
+
+                <div class="sp-slide">
+                    @*<a href="~/Images/lily/Lily010.jpg"></a>*@
+                    <img class="sp-image" src="~/Images/lily/Lily010.jpg" alt="Lily 10" />
+
+                </div>
+            </div>
+
+            @*  START OF THUMBNAILS  *@
+            <div class="sp-thumbnails">
+                <img class="" src="~/Images/thumbnails/LilyThumb001.jpg" />
+                <img class="" src="~/Images/thumbnails/LilyThumb003.jpg" />
+                <img class="" src="~/Images/thumbnails/LilyThumb004.jpg" />
+                <img class="" src="~/Images/thumbnails/LilyThumb005.jpg" />
+                <img class="" src="~/Images/thumbnails/LilyThumb006.jpg" />
+                <img class="" src="~/Images/thumbnails/LilyThumb007.jpg" />
+                <img class="" src="~/Images/thumbnails/LilyThumb008.jpg" />
+                <img class="" src="~/Images/thumbnails/LilyThumb009.jpg" />
+                <img class="" src="~/Images/thumbnails/LilyThumb010.jpg" />
+                @*<img class="sp-thumbnail" src="http://bqworks.com/slider-pro/images/image10_thumbnail.jpg" />*@
+            </div>
+
+        </div>
+    </div>
+</div>
+    -->
+
+
+
+
+
+<!--
+    <div class="panel panel-success">
+    <h5 class="panel-heading">GALLERY</h5>
+    <div class="panel-body">
+        <p>You can put whatever subtext you want here</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel pulvinar velit. Aenean lectus dolor, molestie tincidunt dignissim non, maximus non enim. </p>
+        <div class="btn btn-default">
+            <a href="~/Gallery.cshtml">Yay Tits!</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div id="example2" class="slider-pro">
+        <div class="sp-slides">
+            <div class="sp-slide">
+                <a href="~/Images/lily/Lily001.jpg">
+                    <img class="sp-image" src="~/Images/lily/Lily001.jpg" @*data-src="~/Images/lily/Lily001.jpg"*@ alt="Lily 01" />
+                </a>
+
+                <p class="sp-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="sp-slide">
+                <a href="~/Images/lily/Lily003.jpg">
+                    <img class="sp-image" src="~/Images/lily/Lily003.jpg" alt="Lily 03" />
+                </a>
+                <p class="sp-caption">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+            <div class="sp-slide">
+                <a href="~/Images/lily/Lily004.jpg">
+                    <img class="sp-image" src="~/Images/lily/Lily004.jpg" alt="Lily 04" />
+                </a>
+                <p class="sp-caption">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            </div>
+
+            <div class="sp-slide">
+                <a href="~/Images/lily/Lily005.jpg">
+                    <img class="sp-image" src="~/Images/lily/Lily005.jpg" alt="Lily 05" />
+                </a>
+                <p class="sp-caption">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            </div>
+
+            <div class="sp-slide">
+                <a href="~/Images/lily/Lily006.jpg">
+                    <img class="sp-image" src="~/Images/lily/Lily006.jpg" alt="Lily 06" />
+                </a>
+                <p class="sp-caption">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            </div>
+
+            <div class="sp-slide">
+                <a href="~/Images/lily/Lily007.jpg">
+                    <img class="sp-image" src="~/Images/lily/Lily007.jpg" alt="Lily 07" />
+                </a>
+                <p class="sp-caption">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            </div>
+
+            <div class="sp-slide">
+                <a href="~/Images/lily/Lily008.jpg">
+                    <img class="sp-image" src="~/Images/lily/Lily008.jpg" alt="Lily 08" />
+                </a>
+                <p class="sp-caption">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            </div>
+
+            <div class="sp-slide">
+                <a href="~/Images/lily/Lily009.jpg">
+                    <img class="sp-image" src="~/Images/lily/Lily009.jpg" alt="Lily 09" />
+                </a>
+                <p class="sp-caption">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            </div>
+
+            <div class="sp-slide">
+                <a href="~/Images/lily/Lily010.jpg">
+                    <img class="sp-image" src="~/Images/lily/Lily010.jpg" alt="Lily 10" />
+                </a>
+                <p class="sp-caption">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            </div>
+
+            @*
+
+                <div class="sp-slide">
+                    <a href="http://bqworks.com/slider-pro/images/image10_large.jpg">
+                        <img class="sp-image" src="../src/css/images/blank.gif"
+                             data-src="http://bqworks.com/slider-pro/images/image10_medium.jpg"
+                             data-retina="http://bqworks.com/slider-pro/images/image10_large.jpg" />
+                    </a>
+                    <p class="sp-caption">Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>*@
+
+        </div>
+    </div>
+</div> -->
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body
+        <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel" data-use-bootstrap-modal="true">
+            @*The container for the modal slides *@
+            <div class="slides"></div>
+            @* Controls for the borderless lightbox *@
+            <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>-->
+<!-- The modal dialog, which will be used to wrap the lightbox content
+<div class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body next"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left prev">
+                    <i class="glyphicon glyphicon-chevron-left"></i>
+                    Previous
+                </button>
+                <button type="button" class="btn btn-primary next">
+                    Next
+                    <i class="glyphicon glyphicon-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+@*
+    The links below are what you need to change if you want to switch, add, or remove the images from you Gallery.  Not that one of the links is for the Thumbnail.  You will need to have any additional images resized and saved to a new file.
+*@
+@*<div id="links" align="justify">
+
+        @*  Path to fullsize image goes below
+        <a href="~/Images/lily/Lily001.jpg" title="Lily 01" data-gallery>
+            <img src="~/Images/thumbnails/LilyThumb001.jpg" alt="Lily 01" />
+        </a>
+
+        <a href="~/Images/lily/Lily002.jpg" title="Lily 02" data-gallery>
+            <img src="~/Images/thumbnails/LilyThumb002.jpg" alt="Lily 02" />
+        </a>
+
+        <a href="~/Images/lily/Lily003.jpg" title="Lily 03" data-gallery>
+            <img src="~/Images/thumbnails/LilyThumb003.jpg" alt="Lily 03" />
+        </a>
+
+        <a href="~/Images/lily/Lily004.jpg" title="Lily 04" data-gallery>
+            <img src="~/Images/thumbnails/LilyThumb004.jpg" alt="Lily 04" />
+        </a>
+
+        <a href="~/Images/lily/Lily005.jpg" title="Lily 05" data-gallery>
+            <img src="~/Images/thumbnails/LilyThumb005.jpg" alt="Lily 05" />
+        </a>
+
+        <a href="~/Images/lily/Lily006.jpg" title="Lily 06" data-gallery>
+            <img src="~/Images/thumbnails/LilyThumb006.jpg" alt="Lily 06" />
+        </a>
+
+        <a href="~/Images/lily/Lily007.jpg" title="Lily 07" data-gallery>
+            <img src="~/Images/thumbnails/LilyThumb007.jpg" alt="Lily 07" />
+        </a>
+
+        <a href="~/Images/lily/Lily008.jpg" title="Lily 08" data-gallery>
+            <img src="~/Images/thumbnails/LilyThumb008.jpg" alt="Lily 08" />
+        </a>
+
+        <a href="~/Images/lily/Lily009.jpg" title="Lily 09" data-gallery>
+            <img src="~/Images/thumbnails/LilyThumb009.jpg" alt="Lily 09" />
+        </a>
+
+        <a href="~/Images/lily/Lily010.jpg" title="Lily 10" data-gallery>
+            <img src="~/Images/thumbnails/LilyThumb010.jpg" alt="Lily 10" />
+        </a>
+
+    </div>*@
+
+
+
+
+
+
+
+
+
+
+
+

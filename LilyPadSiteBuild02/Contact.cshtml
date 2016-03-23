@@ -1,0 +1,423 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Contact";
+}
+
+<script language="javascript">
+
+    function CONFIRM() {
+        if (!confirm
+        ("By clicking 'OK' you agree to the following rules: 1) This is not a solicitation for prostitution.  You are donating for my time and that alone. Anything else that happens between us is purely concentual and between two adult.  It is not prostitution.  2) You will only contact me after having read all my rules and made yourself familiar with my screening process and it's requirements.  3) You will not ask about my rates, services, appearance, or for more pictures. All the info and photos you need can be found right here on this site.  4) You will not bombard me with texts, calls, or any other form of acceptable communication.  5) You will be polite and conduct yourself as a gentleman should with poise and grace.   "))
+            history.go(-1); return 
+    }
+    document.writeln(CONFIRM())
+
+</script>
+
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+        <div class="well well-lg">
+            <div class="contact-info">
+                <hgroup class="title">
+                    <h2 class="page-headers">Contact.</h2>
+                </hgroup>
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="info-conditions">
+                        <section class="contact">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <h4 class="contact-details">Conditions:</h4>
+                                </div>
+
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <ul>
+                                        <li>
+                                            PLEASE Do not call or text me prior to submitting references.
+                                        </li>
+                                        <li>
+                                            PLEASE Do not call me from blocked numbers, or any time between 2am & 8am.
+                                        </li>
+                                        <li>
+                                            PLEASE Do no bombard me with excessive calls, texts, or emails.  It is not only unnecessary, but rather quite rude.
+                                        </li>
+                                        <li>
+                                            PLEASE understand that I am very busy (2nd job + School) and may not always be able to respond to your inquiry immediately.  Please be patient.  If you pass my screening I will get back to you ASAP.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <section class="contact">
+                            <div class="row">
+
+                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <h4 class="contact-details">Phone:</h4>
+                                </div>
+
+
+                                <div class="col-lg-9 col-md-9 col-sm-9" id="contact-page-phone-align">
+                                    <p class="contact-details"> (916) 905-0385 </p>
+                                </div>
+
+                            </div>
+
+                        </section>
+                        <br />
+                        <section class="contact">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <h4 class="contact-details">Email:</h4>
+                                </div>
+
+
+                                <div class="col-lg-9 col-md-9 col-sm-9">
+                                    <p class="contact-details" id="contact-page-email">
+                                        <a href="mailto:mistresslilygrace@gmail.com "> mistresslilygrace@gmail.com </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </section>
+                        <br />
+                        <section class="contact">
+                            <div class="row">
+
+                                <div class="col-lg-3 col-md-3 col-sm-3" id="contact-page-location ">
+                                    <h4 class="contact-details">Incall:</h4>
+                                </div>
+
+                                <div class="col-lg-9 col-md-9 col-sm-9">
+                                    <p class="contact-details" id="contact-page-location">Capitol Hill - Seattle</p>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="well well-lg">
+
+            <div id="contact-message-box">
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <hgroup class="title">
+                            <h2 class="page-headers">Info.</h2>
+
+                        </hgroup>
+                    </div>
+                </div>
+
+                @*  START SCREENING FORM  *@
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <form action="~/Scripts/process.php" method="post" class="form-horizontal" id="contactForm">
+                            <fieldset>
+
+                                <div class="row">
+                                    @*  FULL NAME  *@
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="contact-name-email-col">
+                                        <div class="form-group">
+                                            <header>
+                                                <h4 class="contact-page-headers">Full Name:</h4>
+                                            </header>
+
+                                            <input type="text" class="form-control" id="fullName" placeholder="Full Name (Required)" autocomplete="off" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" required>
+                                        
+                                            <header id="contact-email-header">
+                                                <h4 class="contact-page-headers">Email:</h4>
+                                            </header>
+
+                                            <input type="email" class="form-control" id="email" placeholder="Email (Required)" autocomplete="off" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" required>
+
+                                            <header id="contact-phone-header">
+                                                <h4 class="contact-page-headers">Phone:</h4>
+                                            </header>
+
+                                            <input type="number" class="form-control" id="phone" placeholder="Phone (Required)" autocomplete="off" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" required>
+
+                                        </div>
+                                    </div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="generalComments-col">
+
+
+
+                                        @*  GENERAL COMMENTS  *@
+                                        <header>
+                                            <h4 id="contact-page-headers">Message:</h4>
+                                        </header>
+
+
+                                        <textarea class="form-control" rows="5" id="message" placeholder="Use this space to introduce and tell me a little bit about yourself.  In order to facilitate my reply please include all of your pertinant contact information (Phone/Email/Etc) as well as TWO references for providers you have seen within the past year. Make sure to list each reference's WORKING phone/email."></textarea>
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+
+                                <br />
+
+                                @*  SUBMIT AND CANCEL BUTTONS  *@
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-lg-12" id="contact-buttons" align="center">
+
+                                            <button id="contact-submit" type="submit" class="btn btn-default">Submit</button>
+                                            <button id="contact-cancel" type="reset" class="btn btn-default">Cancel</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<!--
+
+    @*  EMAIL  *@
+                                <div class="form-group">
+                                    <div class="col-lg-12">
+
+                                        <header>
+                                            <h4 id="contact-page-headers">Email:</h4>
+                                        </header>
+
+                                        <input type="email" class="form-control" id="email" placeholder="Email (Required)" autocomplete="off" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" required>
+                                    </div>
+                                </div>
+
+                                @*  PHONE NUMBER  *@
+                                <div class="form-group">
+                                    <div class="col-lg-12">
+
+                                        <header>
+                                            <h4 id="contact-page-headers">Phone:</h4>
+                                        </header>
+
+                                        <input type="tel" class="form-control" id="phone" placeholder="Phone (Required)" autocomplete="off" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" required>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                @*  LAST NAME  *@
+                                <div class="form-group">
+                                    <div class="col-lg-12">
+
+                                        <header>
+                                            <h4 id="contact-page-headers">Last Name:</h4>
+                                        </header>
+
+                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name (Required)" autocomplete="off" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" required>
+                                    </div>
+                                </div>
+
+                                @*  DATE OF APPOINTMENT  *@
+                                <div class="form-group">
+                                    <div class="col-lg-12">
+                                        <header>
+                                            <h4 id="contact-page-headers">Desired Appointment Date:</h4>
+                                        </header>
+
+                                        <input type="datetime-local" class="form-control" id="date" placeholder="none" autocomplete="off" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" required>
+
+                                    </div>
+                                </div>
+
+                                @*  BOARD HANDLE  *@
+                                <div class="form-group">
+                                    <div class="col-lg-12">
+                                        <header>
+                                            <h4 id="contact-page-headers">Board Handle:</h4>
+                                        </header>
+
+                                        <input type="text" class="form-control" id="boardHandle" placeholder="Board Handle (Required)" autocomplete="off" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+
+
+    <div class="row">
+                            @*  REFERENCE TITLE  *@
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <hgroup class="title">
+                                    <h2 class="page-headers">References.</h2>
+
+                                </hgroup>
+
+                                <p>
+                                    Please enter the contact information for your reference below.  This should include the following information: NAME, WORKING PHONE, OR CURRENT EMAIL.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            @*  REFERENCE #01  *@
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <div class="col-lg-12">
+                                        <header>
+                                            <h4 id="contact-page-headers">Reference #01:</h4>
+                                        </header>
+
+
+                                        <textarea class="form-control" rows="3" id="reference01" placeholder="Please include NAME, WORKING PHONE, and CURRENT EMAIL." required></textarea>
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @*  REFERENCE #02  *@
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <div class="col-lg-12">
+                                        <header>
+                                            <h4 id="contact-page-headers">Reference #02:</h4>
+                                        </header>
+
+
+                                        <textarea class="form-control" rows="3" id="reference02" placeholder="Please include NAME, WORKING PHONE, and CURRENT EMAIL."></textarea>
+                                        <span class="help-block"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+-->
+@*  LAST NAME  *@
+@*<div class="form-group">
+        <div class="col-lg-12">
+
+            <header>
+                <h4 id="contact-page-headers">Last Name:</h4>
+            </header>
+
+            <input type="text" class="form-control" id="lastName" placeholder="Last Name (Required)" autocomplete="off" style="cursor: auto; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;" required>
+        </div>
+    </div>*@
+
+@*  INCALL OR OUTCALL  *@
+@*<div class="form-group">
+                <div class="col-lg-12">
+                    <header>
+                        <h4 id="contact-page-headers">Host of Date:</h4>
+                    </header>
+                    <select class="form-control" id="wardrobe">
+                        <option>Incall (You come to me)</option>
+                        <option>Outcall (I come to you. Additional Cost)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+@*  WAREDROBE REQUESTS  *@
+@*<div class="form-group">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <hgroup class="title">
+                <h2 class="page-headers">Desires.</h2>
+
+            </hgroup>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <header>
+                <h4 id="contact-page-headers">Wardrobe:</h4>
+            </header>
+            <select class="form-control" id="wardrobe">
+                <option>Sexy Secretary</option>
+                <option>Hot Yoga Instructor</option>
+                <option>Evening Wear</option>
+                <option>Casual Street Clothes</option>
+                <option>Other (Please specify in comments)</option>
+            </select>
+        </div>
+    </div>*@
+
+@*  FETISH REQUESTS  *@
+@*<div class="form-group">
+        <div class="col-lg-12">
+            <header>
+                <h4 id="contact-page-headers">Fetish:</h4>
+            </header>
+            <select class="form-control" id="fetish">
+                <option>Feet</option>
+                <option>FBSM</option>
+                <option>Cockcold</option>
+                <option>Dominatrix</option>
+                <option>Role Play</option>
+                <option>Smoking</option>
+                <option>Other (Please specify in comments)</option>
+            </select>
+        </div>
+    </div>*@
+
+@*  SURVEY  *@
+@*<div class="form-group">
+            <div class="col-lg-12">
+                <header>
+                    <h4 id="contact-page-headers">Where did you find Me?:</h4>
+                </header>
+                <select class="form-control" id="survey">
+                    <option>TNA Board</option>
+                    <option>Provider 411</option>
+                    <option>Backpage</option>
+                    <option>Web Search Results</option>
+                    <option>Other (Please specify in comments)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">*@
+@*  LIKES AND DISLIKES  *@
+@*<div class="form-group">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <hgroup class="title">
+                        <h2 class="page-headers">Message.</h2>
+
+                    </hgroup>
+                </div>
+            </div>
+            <header>
+                <h4 id="contact-page-headers">Likes + Dislikes:</h4>
+            </header>
+
+
+            <textarea class="form-control" rows="3" id="likesDislikes" placeholder="Please use this space to tell me about any specific likes, dislikes, or anything specific I should know to ensure you have the experiece you want and deserve."></textarea>
+            <span class="help-block"></span>
+        </div>
+    </div>*@
+

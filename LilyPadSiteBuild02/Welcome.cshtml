@@ -1,0 +1,50 @@
+﻿@{
+    Layout = "~/_WelcomeLayout.cshtml";
+    Page.Title = "Welcome";
+}
+
+
+<div class="well well-lg">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            @*<h2 class="page-header">Welcome!</h2>*@
+            <div class="welcome-header" align="center">
+                <h2 class="page-headers">You must be 18 years or older to enter this Website.</h2>
+            </div>
+            <div class="welcome-msg">
+                <p>
+                    This Website contains explicit sexual material which may be offensive to some viewers, if such material offends you, or if it is illegal to view adult content in your community please do not continue.  The below terms and conditions apply to this site.
+                </p>
+                <p>
+                    Entering the site via the link below will constitute your agreement to the following terms and conditions:  I am 18 years of age or older I accept all resposibility for my own actions.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    @* START WELCOME BUTTONS *@
+    <div class="row">
+        <div align="center">
+            <div class="col-lg-4 col-md-4 col-sm-4"></div>
+
+            <div class="col-lg-1">
+                <div class="btn btn-default welcome-btn" id="welcome-agree">
+                    <a href="~/Default.cshtml">Enter</a>
+                </div>
+            </div>
+
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-1">
+                <div class="btn btn-default welcome-btn" id="welcome-exit">
+                    <a href="http://www.google.com">Exit</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4"></div>
+        </div align="center">
+    </div>
+</div>
